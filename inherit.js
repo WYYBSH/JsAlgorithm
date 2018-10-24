@@ -1,3 +1,4 @@
+//继承
 function parent(){
     this.name = "tsubame"
 }
