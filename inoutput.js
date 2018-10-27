@@ -7,6 +7,7 @@ const rl = readline.createInterface({
 });
 
 rl.on('line',function(line){
+    //将字符串line转换为tokens数组
     var tokens = line.split(' ');
     console.log(parseInt(tokens[0])+parseInt(tokens[1]));
 });
