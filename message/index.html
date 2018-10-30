@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据传输</title>
+</head>
+<body>
+    <form action="">
+        username:<input type="text" id="name">
+        password:<input type="text" id="pass">
+        <button type="button" onclick="login()">登陆</button>
+    </form>
+    <!-- 表单登陆，传送的是键值对形式的信息 -->
+    <form action="http://192.168.1.180:8099/login" method="post">
+        username:<input type="text" name="username" value="admin">
+        password:<input type="text" name="password" value="123456">
+        <button type="submit">登陆_form</button>
+    </form>
+    
+    <button type="button" onclick="send_json()">注册</button>
+
+    <script src="jquery.js"></script>
+    <script src="ajax.js"></script>
+    <!-- <script src="jq_ajax.js"></script> -->
+</body>
+</html>
