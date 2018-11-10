@@ -20,7 +20,7 @@ function fc_post() {
     }),
     credentials: 'include',
     body:JSON.stringify(data),
-    methods: "POST"
+    method: "POST"
   }
   fetch(link, otherPram)
     .then(response => response.json())
